@@ -37,6 +37,8 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 0;
         }
+        .card { transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
     </style>
     
     <link rel="icon" href="img/logo-desa.png" type="image/png">
@@ -71,7 +73,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section dengan Video Background -->
+    <!-- Hero Section -->
     <header class="hero-section text-center">
         <video autoplay muted loop playsinline class="video-bg">
             <source src="img/tp.mp4" type="video/mp4">
@@ -90,49 +92,35 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="row g-4">
+            <!-- Kolom Utama -->
             <div class="col-lg-8">
-                <!-- Profil Kelurahan -->
-                <div class="card shadow-sm mb-4" id="visi-misi">
+                <div class="card shadow-sm mb-4">
                     <div class="card-body">
                         <h3 class="card-title text-success border-bottom pb-2">Profil Kelurahan</h3>
-                        <h5 class="mt-4" id="geografis">Geografis</h5>
+                        <h5 class="mt-4">Geografis</h5>
                         <p>Luas Wilayah: 220,00 km<sup>2</sup></p>
                         <p>Batas Wilayah:</p>
-                        <ul>
-                              <li><strong>Utara:</strong> Desa Tanjung Harapan</li>
-                        <li><strong>Timur:</strong> Desa Kuala Gaung</li>
-                        <li><strong>Selatan:</strong> Kecamatan Kuala Indragiri </li>
-                        <li><strong>Barat:</strong> Desa Teluk Pantaian</li>
+                        <ul class="list-unstyled">
+                            <li><strong>Utara:</strong> Desa Tanjung Harapan</li>
+                            <li><strong>Timur:</strong> Desa Kuala Gaung</li>
+                            <li><strong>Selatan:</strong> Kecamatan Kuala Indragiri</li>
+                            <li><strong>Barat:</strong> Desa Teluk Pantaian</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Section Video -->
                 <div class="card shadow-sm mb-4">
                     <div class="card-body">
                         <h3 class="card-title text-success border-bottom pb-2">Jelajahi lebih banyak Teluk Pinang</h3>
                         <div class="row mt-3">
-                            <div class="col-md-4 mb-3">
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/HYqd-_72nhU" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/A5mxh-s9rSU" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/oJJ-P9DD8Z8" allowfullscreen></iframe>
-                                </div>
-                            </div>
+                            <div class="col-md-4 mb-3"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/HYqd-_72nhU" allowfullscreen></iframe></div></div>
+                            <div class="col-md-4 mb-3"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/A5mxh-s9rSU" allowfullscreen></iframe></div></div>
+                            <div class="col-md-4 mb-3"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/oJJ-P9DD8Z8" allowfullscreen></iframe></div></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Peta -->
-                <div class="card shadow-sm" id="peta">
+                <div class="card shadow-sm">
                     <div class="card-body">
                         <h3 class="card-title text-success border-bottom pb-2">Peta Wilayah</h3>
                         <img src="img/try1.jpg" alt="Peta Desa" class="img-fluid rounded mt-2">
@@ -146,23 +134,25 @@
                     <div class="card-body">
                         <h4 class="card-title text-success border-bottom pb-2">Info Potensi</h4>
                         <div class="row g-2">
-                            <div class="col-6">
-                                <img src="img/pinang.jpg" alt="Pertanian" class="img-fluid rounded">
-                                <p class="small text-center mt-1">Perkebunan</p>
-                            </div>
-                            <div class="col-6">
-                                <img src="img/ikan.jpg" alt="Wisata" class="img-fluid rounded">
-                                <p class="small text-center mt-1">Perairan</p>
-                            </div>
+                            <div class="col-6"><img src="img/pinang.jpg" alt="Pertanian" class="img-fluid rounded"><p class="small text-center mt-1">Perkebunan</p></div>
+                            <div class="col-6"><img src="img/ikan.jpg" alt="Wisata" class="img-fluid rounded"><p class="small text-center mt-1">Perairan</p></div>
                         </div>
                     </div>
                 </div>
-                <!-- Statistik -->
+
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <h4 class="card-title text-success border-bottom pb-2">Statistik Kependudukan</h4>
-                        <p>Total Penduduk: 8.000 jiwa</p>
-                        <a href="#" class="btn btn-success btn-sm w-100" target="_blank">Lihat Data Lengkap</a>
+                        <ul class="list-unstyled small">
+                            <li><strong>Total Penduduk:</strong> 8.161 jiwa</li>
+                            <li><strong>Usia 0–4 Tahun:</strong> 640 jiwa</li>
+                            <li><strong>Usia 0–14 Tahun:</strong> 1.956 jiwa</li>
+                            <li><strong>Usia 15–60 Tahun:</strong> 5.608 jiwa</li>
+                            <li><strong>Usia 60+ Tahun:</strong> 933 jiwa</li>
+                            <li><strong>Usia 65+ Tahun:</strong> 597 jiwa</li>
+                        </ul>
+                        <p class="small text-muted mt-2"><em>Sumber: BPS – Sensus Penduduk 2020</em></p>
+                        <a href="https://web-api.bps.go.id/download.php?f=MJ54HEvgbncgdpg2Oa1eeUpneERhdFJmUlNqUndnZHk5Z2I5NVJoa0pLLzJJMy9HY2FMMlR3Q1RxcE5Gd1BITEpEMHdZZlJCWU1xM2Faa3B6SWVmejJMNFVTWXRoNUUrdERhaUtmbitsMnJJbnZLL2dXVnVUTXpnMjYzanc3bjhTNjUxOU9CeXEzR2xib2I3Tm55RjV5bnc3SDhrZk1SZzAyWGNtVGxUbExKcldocFQvSjNnM2FaWCtzalpCYW02UzlObjdIak44Z3dWUXg5RHBWTzI3Yjg0WGJFRGQxM0UvYzRHbE16ajY0YXFESTBMb1VvRy9HT2VQeEdaL0RycEdNNzdZN0docDFoVzJobU9aRVVkdk1obTVrRi9PMzJ5aTduSTVnPT0=" class="btn btn-success btn-sm w-100" target="_blank">Lihat Data Lengkap</a>
                     </div>
                 </div>
             </div>
