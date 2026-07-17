@@ -1,0 +1,22 @@
+/* Gaya Khusus Hero Section */
+.hero-section {
+    /* Path ke gambar hutan Anda */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/hutan-desa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* Tinggi 60% dari layar */
+    min-height: 300px;
+}
+
+/* Agar teks dropdown menu terlihat jelas di mobile */
+@media (max-width: 991px) {
+    .dropdown-menu {
+        background-color: #f8f9fa;
+    }
+}
+
+/* Gaya link navigasi aktif */
+.nav-link.active {
+    font-weight: bold;
+    color: #fff !important;
+}

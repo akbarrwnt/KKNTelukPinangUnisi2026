@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Informasi Kelurahan Teluk Pinang Kab. Indragiri Hilir</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .hero-section {
+            height: 60vh; 
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+    </style>
+    
+    <link rel="icon" href="img/logo-desa.png" type="image/png">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo-desa.png" alt="Logo Desa" width="45" class="me-2">
+                <img src="img/kkn.png" alt="Logo KKN" width="78" class="me-3">
+                <div>
+                    <div class="fw-bold">Kelurahan Teluk Pinang</div>
+                    <small class="text-white-50" style="font-size: 0.8rem;">Kabupaten Indragiri Hilir</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Profil Desa</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="geografi.html">Geografis</a></li>
+                            <li><a class="dropdown-item" href="visimisi.html">Sejarah</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section dengan Video Background -->
+    <header class="hero-section text-center">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="img/tp.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="container position-relative" style="z-index: 1;">
+            <h1 class="display-4 fw-bold">Selamat Datang di</h1>
+            <h2 class="display-5">Website Informasi Kelurahan Teluk Pinang</h2>
+            <p class="lead mt-3">Dibuat oleh KKN Tematik UNISI Tahun 2026.</p>
+            <p class="small text-light">Video Background Source: 
+                <a href="https://youtu.be/HYqd-_72nhU?si=1mmh5TVtvgrBs1JE" target="_blank" class="text-white">Made.Riaupov</a>
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <!-- Profil Kelurahan -->
+                <div class="card shadow-sm mb-4" id="visi-misi">
+                    <div class="card-body">
+                        <h3 class="card-title text-success border-bottom pb-2">Profil Kelurahan</h3>
+                        <h5 class="mt-4" id="geografis">Geografis</h5>
+                        <p>Luas Wilayah: 220,00 km<sup>2</sup></p>
+                        <p>Batas Wilayah:</p>
+                        <ul>
+                              <li><strong>Utara:</strong> Desa Tanjung Harapan</li>
+                        <li><strong>Timur:</strong> Desa Kuala Gaung</li>
+                        <li><strong>Selatan:</strong> Kecamatan Kuala Indragiri </li>
+                        <li><strong>Barat:</strong> Desa Teluk Pantaian</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section Video -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-success border-bottom pb-2">Jelajahi lebih banyak Teluk Pinang</h3>
+                        <div class="row mt-3">
+                            <div class="col-md-4 mb-3">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/HYqd-_72nhU" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/A5mxh-s9rSU" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/oJJ-P9DD8Z8" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peta -->
+                <div class="card shadow-sm" id="peta">
+                    <div class="card-body">
+                        <h3 class="card-title text-success border-bottom pb-2">Peta Wilayah</h3>
+                        <img src="img/try1.jpg" alt="Peta Desa" class="img-fluid rounded mt-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title text-success border-bottom pb-2">Info Potensi</h4>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <img src="img/pinang.jpg" alt="Pertanian" class="img-fluid rounded">
+                                <p class="small text-center mt-1">Perkebunan</p>
+                            </div>
+                            <div class="col-6">
+                                <img src="img/ikan.jpg" alt="Wisata" class="img-fluid rounded">
+                                <p class="small text-center mt-1">Perairan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Statistik -->
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title text-success border-bottom pb-2">Statistik Kependudukan</h4>
+                        <p>Total Penduduk: 8.000 jiwa</p>
+                        <a href="#" class="btn btn-success btn-sm w-100" target="_blank">Lihat Data Lengkap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 Pemerintah Kelurahan Teluk Pinang. Hak Cipta Dilindungi.</p>
+            <p class="small">Didukung oleh Tim KKN Tematik Universitas Islam Indragiri (UNISI) Tahun 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

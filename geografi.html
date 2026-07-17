@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geografis - Kelurahan Teluk Pinang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Rasio 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
+        }
+        .section-box { background: #fff; border-radius: 12px; padding: 25px; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">← Kembali ke Beranda</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="section-box shadow-sm">
+            <h2 class="text-success mb-4 border-bottom pb-2">Geografis Kelurahan Teluk Pinang</h2>
+            
+            <div class="row g-4">
+                <!-- Kolom Detail Wilayah -->
+                <div class="col-lg-5">
+                    <h5 class="fw-bold">Detail Wilayah</h5>
+                    <p><strong>Luas Wilayah:</strong> 220,00 km<sup>2</sup></p>
+                    <p><strong>Kondisi Geografis:</strong> Wilayah Kelurahan Teluk Pinang merupakan kawasan strategis yang berada di pesisir, dengan bentang alam yang didominasi oleh perairan sungai dan lahan daratan yang produktif.</p>
+                    
+                    <!-- Tombol ke Tempat Strategis -->
+                    <a href="Tempat.html" class="btn btn-success shadow-sm w-100 mt-2">
+                        Lihat Tempat Strategis
+                    </a>
+                    
+                    <h5 class="fw-bold mt-4">Batas Wilayah:</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Utara:</strong> Desa Tanjung Harapan</li>
+                        <li><strong>Timur:</strong> Desa Kuala Gaung</li>
+                        <li><strong>Selatan:</strong> Kecamatan Kuala Indragiri </li>
+                        <li><strong>Barat:</strong> Desa Teluk Pantaian</li>
+                    </ul>
+                </div>
+
+                <!-- Kolom Peta -->
+                <div class="col-lg-7">
+                    <h5 class="fw-bold">Peta Lokasi</h5>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31888.767597116748!2d103.1491752495394!3d-0.3477144983058866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e05b5f479a32c75%3A0x868d4001f358671!2sTeluk%20Pinang%2C%20Gaung%20Anak%20Serka%2C%20Kabupaten%20Indragiri%20Hilir%2C%20Riau!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2026 Pemerintah Kelurahan Teluk Pinang. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
